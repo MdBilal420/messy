@@ -1,9 +1,9 @@
-.image-content{
+.image-container{
     border: 1px solid black;
     padding: 20px;
     border-radius: 7px;
-    text-align:center;
-    margin: 30px;
+    /* text-align:center; */
+    margin: 30px 30px 30px 0px;
 }
 
 .img-res{

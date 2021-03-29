@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="../components/styles/list.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="grid-container">
         <nav class="nav">
-            <label>messy</label>
+            <a href="../index.html"><label>messy</label></a>
         </nav>
         <div class="side-menu">
             <a href="../index.html"><span>Getting Started</span></a>
@@ -30,13 +31,52 @@
             <a href="./list.html"><span><strong>List</strong></span></a>
             <a href="./modal.html"><span>Modal</span></a>
             <a href="./navbar.html"><span>NavBar</span></a>
-            <a href="./typography.html"><span>Typography</span></a>
         </div>
         <section class="content">
 
             <div class="content-section">
-                <h1>Alert</h1>
-                <p>Alert component for feedback. When you need to show alert messages to users.</p>
+                <h1>List</h1>
+                <p>A list can be used to display content related to a single subject. The content can consist of
+                    multiple elements of varying type and size</p>
+            </div>
+            <h3>Simple List</h3>
+            <div class="list-container">
+                <ul class="simple-list">
+                    <li>Run Daily</li>
+                    <li>Sleep fully</li>
+                    <li>Eat healthy</li>
+                    <li>Talk Politely</li>
+                </ul>
+                <iframe src="https://carbon.now.sh/embed/q1XY58JMkQtzBUUEd2It"
+                    style="width: 400px; height: 294px; border:0;margin-top: 20px; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h3>Stacked List</h3>
+            <div class="list-container">
+                <ul class="stacked-list">
+                    <li>
+                        <p>Run Daily</p>
+                    </li>
+                    <li>
+                        <p>Sleep fully</p>
+                    </li>
+                    <li>
+                        <p>Eat healthy</p>
+                    </li>
+                    <li>
+                        <p>Talk Politely</p>
+                    </li>
+                </ul>
+                <iframe src="https://carbon.now.sh/embed/QCdYSeYj52k7CNys0jEd"
+                    style="width: 600px; height: 294px; border:0;margin-top: 20px; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <div class="change-section">
+                <a href="./input.html">input</a>
+                <a href="./modal.html" style="float: right;">modal</a>
             </div>
         </section>
 

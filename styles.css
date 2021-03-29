@@ -10,8 +10,8 @@
 
 body{
 
-    display: flex; 
-   flex-direction: column;
+    /* display: flex; 
+   flex-direction: column; */
 }
 
 
@@ -19,6 +19,8 @@ body{
     max-width: 800px;
     grid-area: main;
     padding: 10px;
+    margin-top: 5em;
+    margin-left: 15em;
 }
 
 .content-section, h1, p{
@@ -40,6 +42,8 @@ nav{
     width: 100%;
     grid-area: header;
     overflow: auto;
+    position: fixed;
+    z-index: 1;
 }
 
 label{
@@ -56,8 +60,9 @@ label{
     width: 250px;
     height: auto;
     overflow-y: auto;
-    grid-area: menu;
-    overflow: auto;       
+    grid-area: menu;  
+    position: fixed;   
+    margin-top: 5em;
 }
 
 .side-menu::-webkit-scrollbar {
@@ -121,4 +126,13 @@ font-size: 1.3;
 
 
 
+.change-section a{
+    color: #20232a;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.change-section a:hover{
+    color: gray;
+    font-weight: 600;
+}
 

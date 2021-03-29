@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="../components/styles/modal.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="grid-container">
         <nav class="nav">
-            <label>messy</label>
+            <a href="../index.html"><label>messy</label></a>
         </nav>
         <div class="side-menu">
             <a href="../index.html"><span>Getting Started</span></a>
@@ -27,16 +28,38 @@
             <a href="./card.html"><span>Card</span></a>
             <a href="./image.html"><span>Image</span></a>
             <a href="./input.html"><span>Input</span></a>
-            <a href="./list.html"><span>Lists</span></a>
+            <a href="./list.html"><span>List</span></a>
             <a href="./modal.html"><span><strong>Modal</strong></span></a>
             <a href="./navbar.html"><span>NavBar</span></a>
-            <a href="./typography.html"><span>Typography</span></a>
+
         </div>
         <section class="content">
 
             <div class="content-section">
-                <h1>Alert</h1>
-                <p>Alert component for feedback. When you need to show alert messages to users.</p>
+                <h1>Modal</h1>
+                <p>When requiring users to interact with the application, but without jumping to a new page and
+                    interrupting the user's workflow, you can use Modal to create a new floating layer over the current
+                    page to get user feedback or display information.</p>
+            </div>
+            <div class="modal-container">
+                <div class="box">
+                    <a class="button" href="#modal">Modal</a>
+                </div>
+
+                <div id="modal" class="overlay">
+                    <div class="modal-content">
+                        <h3>This is a Modal</h3>
+                        <a class="close" href="#">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://carbon.now.sh/embed/3Zt2uGXMgZBdndKljqaa"
+                style="width: 600px; height: 366px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <div class="change-section">
+                <a href="./list.html">List</a>
+                <a href="./navbar.html" style="float: right;">Navigation</a>
             </div>
         </section>
 
