@@ -4,35 +4,70 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: 400; */
+}
+
+body{
+
+    display: flex; 
+   flex-direction: column;
+}
+
+
+.content{
+    max-width: 800px;
+    grid-area: main;
+    padding: 10px;
+}
+
+.content-section, h1, p{
+    padding-bottom: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "menu main main main main main";
+    
 }
 
 nav{
     background:#20232a;
     line-height: 80px;
-    position: relative;
     width: 100%;
+    grid-area: header;
+    overflow: auto;
 }
 
 label{
-    line-height: 80px;
+    line-height: 60px;
     font-size: 30px;
     color: white;
-    font-weight: 200;
-    margin-left: 50px;
+    font-weight: 300;
+    margin-left: 30px;
     cursor: pointer;
 }
 
 .side-menu{
-     position: sticky; 
      background-color: rgb(247, 247, 247);
     width: 250px;
-    height: 100%;
-    margin-top: 0px; 
+    height: auto;
+    overflow-y: auto;
+    grid-area: menu;
+    overflow: auto;       
 }
+
+.side-menu::-webkit-scrollbar {
+    display: none;
+  }
+
 
 .side-menu a {
     color: rgb(26, 26, 26);
-    display: block;
+    display: flex;
     font-size: medium;
     font-weight: 500;
     border-bottom: 1px solid transparent;
@@ -44,20 +79,18 @@ label{
 
 .side-menu a:hover {
     color:white;
-    display: inline-block;
+    display: flex;
     border-bottom: 1px solid transparent;
+    border-radius: 7px;
     margin-top: 5px;
+    padding-left: 5px;
     font-weight: 700;
     transition: border 0.2s ease 0s;
     background: #20232a;
     width: 95%;
 }
 
-nav .menu-bar{
-    float: right;
-    display: none;
-    margin-right: 20px;
-}
+
 
 @media(max-width:900px){
 
@@ -65,6 +98,27 @@ nav .menu-bar{
     .side-menu{
         display: none;
    }
+
+   .content{
+       margin-left: 0px;
+   }
+
 }
+
+/* .content-section{
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction:column;
+text-align: center;
+margin:auto;
+}
+
+.content-section-heading{
+padding-top: 100px;
+font-size: 1.3;
+} */
+
+
 
 
