@@ -32,7 +32,8 @@ body{
     grid-template-areas:
     "header header header header header header"
     "menu main main main main main"
-    "menu main main main main main";
+    "menu main main main main main"
+    "menu footer footer footer footer footer";
     
 }
 
@@ -44,6 +45,7 @@ nav{
     overflow: auto;
     position: fixed;
     z-index: 1;
+
 }
 
 label{
@@ -53,6 +55,33 @@ label{
     font-weight: 300;
     margin-left: 30px;
     cursor: pointer;
+}
+
+footer{
+    grid-area: footer;
+    margin-left: 12em;
+    width: 85%;
+    margin-bottom: 0px;
+    position: sticky;
+    background: #20232a;
+    line-height: 2rem;
+    border-radius: 7px 7px 0px 0px;
+}
+
+footer ul{
+    color: aliceblue;
+   display: flex;
+    margin: 20px;
+   justify-content: center;
+}
+
+footer ul li, footer ul li a {
+    padding-right: 20px;
+    color: #fff;
+}
+
+footer ul li a:hover{
+    color: gray;
 }
 
 .side-menu{
@@ -106,6 +135,12 @@ label{
 
    .content{
        margin-left: 0px;
+   }
+
+   footer{
+       margin-left: 0px;
+       width: 100%;
+       margin-bottom: 0px;
    }
 
 }
