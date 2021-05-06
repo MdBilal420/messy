@@ -15,10 +15,15 @@
     border-radius: 6px;
     padding: 20px;
     box-shadow: 5px 10px 10px 5px #888888;
+    cursor: pointer;
 }
 
 .simple-list li {
-    line-height: 2rem;
+    line-height: 1.5rem;
+}
+
+.simple-list li:hover {
+    font-size: 1.1rem;
 }
 
 /* stacked list */
@@ -32,4 +37,9 @@ max-width: 350px;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
+    cursor: pointer;
+}
+
+.stacked-list li:hover {
+    font-size: 1.1rem;
 }
